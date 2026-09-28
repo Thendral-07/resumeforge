@@ -1,0 +1,32 @@
+{
+  "userId": "test-user-123",
+  "templateStyle": "ats-safe",
+  "name": "John Doe",
+  "contact": {
+    "email": "john@example.com",
+    "phone": "+1-555-123-4567",
+    "location": "San Francisco, CA",
+    "linkedin": "https://linkedin.com/in/johndoe"
+  },
+  "summary": "Senior software engineer with 8+ years of experience building scalable web applications.",
+  "experience": [
+    {
+      "title": "Senior Software Engineer",
+      "company": "TechCorp Inc.",
+      "dates": "2020 - Present",
+      "bullets": [
+        "Led migration of legacy monolith to microservices architecture",
+        "Reduced API latency by 40% through caching optimization",
+        "Mentored 5 junior engineers on best practices"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.S. Computer Science",
+      "institution": "Stanford University",
+      "dates": "2012 - 2016"
+    }
+  ],
+  "skills": ["JavaScript", "TypeScript", "Node.js", "React", "PostgreSQL", "AWS", "Docker"]
+}

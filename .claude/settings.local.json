@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(node *)",
+      "mcp__codebase-index__write_file",
+      "Bash(curl *)",
+      "Bash(pkill -f \"node server.js\")",
+      "Bash(pkill -9 -f \"node server.js\")",
+      "mcp__github__search_repositories",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit -m 'Initial commit with ResumeForge features *)",
+      "Bash(git branch *)",
+      "Bash(git remote *)"
+    ]
+  }
+}

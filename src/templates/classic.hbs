@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { font-family: 'Times New Roman', serif; font-size: 10.5pt; margin: 40px 50px; color: #000; }
+  .header { text-align: center; margin-bottom: 4px; }
+  .header h1 { font-size: 16pt; margin: 0; letter-spacing: 1px; }
+  .contact-line { font-size: 9.5pt; margin: 2px 0; }
+  .contact-line span { margin: 0 6px; }
+  .institution-line { display: flex; justify-content: space-between; font-size: 10pt; margin-bottom: 10px; }
+  .section-title { font-weight: bold; font-size: 11pt; text-transform: none; border-bottom: 1px solid #000; margin-top: 12px; margin-bottom: 4px; padding-bottom: 1px; }
+  .entry-header { display: flex; justify-content: space-between; font-weight: bold; margin-top: 4px; }
+  .entry-sub { font-style: italic; font-size: 9.5pt; margin-bottom: 2px; }
+  ul { margin: 2px 0 6px 18px; padding: 0; }
+  li { margin-bottom: 2px; line-height: 1.3; }
+  .tech-used { font-size: 9.5pt; margin-left: 18px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>{{name}}</h1>
+    <div class="contact-line">
+      {{phone}} <span>|</span> {{email}} <span>|</span> {{github}} <span>|</span> {{linkedin}}
+    </div>
+  </div>
+
+  <div class="institution-line">
+    <span><b>{{degree}}</b></span>
+    <span>{{institution}}</span>
+  </div>
+
+  <div class="section-title">Education</div>
+  {{#each education}}
+  <div class="entry-header"><span>{{this.degree}}</span><span>{{this.dates}}</span></div>
+  <div class="entry-sub">{{this.institution}} — CGPA: {{this.cgpa}}</div>
+  {{/each}}
+
+  <div class="section-title">Personal Projects</div>
+  {{#each projects}}
+  <div class="entry-header"><span>{{this.title}}</span></div>
+  <div class="entry-sub">{{this.description}}</div>
+  <ul>{{#each this.bullets}}<li>{{this}}</li>{{/each}}</ul>
+  <div class="tech-used"><i>Technology Used:</i> {{this.tech}}</div>
+  {{/each}}
+
+  <div class="section-title">Experience</div>
+  {{#each experience}}
+  <div class="entry-header"><span>{{this.title}}</span><span>{{this.dates}}</span></div>
+  <div class="entry-sub">{{this.company}}</div>
+  <ul>{{#each this.bullets}}<li>{{this}}</li>{{/each}}</ul>
+  {{/each}}
+
+  <div class="section-title">Technical Skills and Interests</div>
+  <div>{{#each skillCategories}}<b>{{this.label}}:</b> {{this.items}}<br>{{/each}}</div>
+
+  <div class="section-title">Positions of Responsibility</div>
+  {{#each positions}}
+  <div class="entry-header"><span>{{this.title}}</span><span>{{this.dates}}</span></div>
+  <ul>{{#each this.bullets}}<li>{{this}}</li>{{/each}}</ul>
+  {{/each}}
+</body>
+</html>
