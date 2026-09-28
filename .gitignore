@@ -24,4 +24,4 @@ test-resume.pdf
 Thumbs.db
 
 # Claude
-.claude/
+.claude/.env
