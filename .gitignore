@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.local
+
+# Logs
+*.log
+server.log
+
+# Test outputs
+*.pdf
+test-resume.pdf
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude
+.claude/

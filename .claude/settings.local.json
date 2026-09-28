@@ -12,7 +12,8 @@
       "Bash(git add *)",
       "Bash(git commit -m 'Initial commit with ResumeForge features *)",
       "Bash(git branch *)",
-      "Bash(git remote *)"
+      "Bash(git remote *)",
+      "Bash(git push *)"
     ]
   }
 }
